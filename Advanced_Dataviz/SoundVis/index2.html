@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main JS file-->
+    <script src="main.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">  
+  </head>
+  <body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Audioreactive Visuals</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary">Exploration</button>
+        
+                    <button type="button" class="btn btn-primary">Gallery</button>
+                  </div> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Exploration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+    </div>      
+
+    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-2">
+
+            <div class="card" style="width: 18rem; margin-top:2rem;">
+                <div class="card-header">
+                  <h6 style = "text-align:center; padding-top:1rem;">Data elements visualized</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                     <li class="list-group-item">
+                     <b>Frequency</b> (Pitch)
+                     </li>
+                     <li class="list-group-item nostroke">
+                        <b>Amplitude</b> (Loudness)
+                     </li>
+                  <!-- <li class="list-group-item"> -->
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary">Static</button>
+                        <button type="button" class="btn btn-primary">Dynamic</button>
+                      </div>
+                  <!-- </li> -->
+                  <!-- <li class="list-group-item"> -->
+                  <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                      <option selected>Audio...</option>
+                      <option value="1">Audio 1</option>
+                      <option value="2">Audio 2</option>
+                      <option value="3">Audio 3</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Select Audio</label>
+                  </div>
+                  <!-- </li> -->
+                  <li class="list-group-item" style = "margin-left: auto; margin-right: auto;">
+                    <a href="#" class="link-secondary" >Export</a>
+                  </li>
+                </ul>
+              </div>
+
+          </div>
+
+          <div class="col-10">
+
+          </div>
+
+        </div>
+
+        <div class = "row">
+            <div class = col-2>
+                [Text]
+            </div>
+            <div class = "col-10">
+                <h6 style = "text-align: center;">[gallery] </h6>
+            </div>
+        </div>
+      </div>
+      
+
+  </body>
+</html>

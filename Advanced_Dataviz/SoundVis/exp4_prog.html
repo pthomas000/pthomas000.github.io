@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Synesthesia</title>
+
+  <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script language="javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="exp4_prog.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <div class= = "row" style = "display:flex;">
+
+  <div class = "col-2" style = "background-color: rgb(247, 247, 247);">
+    <div style = "padding-bottom:30%;">
+    <div class = "row" style = "background-color:rgb(247, 247, 247);">
+      <div style = "font-size:3rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight:bold;">
+        Syne—
+      </div>
+    </div>
+    <div class = "row" style = "background-color: rgb(247, 247, 247);">
+      <div style = "font-size:3rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight:bold;">
+        sthesia
+      </div>
+    </div>
+  </div>
+
+  <div class = "row">
+    <div id = pageButton>
+      <a href = "index.html">Equalizer</a>
+    </div>
+  </div>
+
+  <div class = "row" id = pageButton>
+    <div>
+      <a href = "exp3.html">Freq Buckets</a>
+    </div>
+  </div>
+
+ 
+  <div class = "row" id = pageButton>
+    <div >
+      <a href = "exp4.html">Saturation</a>
+    </div>
+  </div>
+
+  <div class = "row" id = pageButton>
+    <div >
+      <a href = "exp2.html">Physics</a>
+    </div>
+  </div>
+
+  <div class = "row" style = "visibility: hidden;" >
+
+  <div style = "display:block; visibility: hidden;"> 
+    <a href="AhOh_exp1.html">
+    <button>Ambient</button>
+    </a>
+  </div>
+  </div>
+
+  <div class = "row">
+    <div class = "genre">
+    <a href="exp4.html">
+    <button>Ambient</button>
+    </a>
+    </div>
+  </div>
+
+  <div class = "row" >
+    <div class = "genre">
+    <a href="exp4_prog.html">
+    <button>Prog Rock</button>
+    </a>
+</div>
+  </div>
+
+  <div class = "row">
+  <div class = "genre">
+    <a href="exp4_classical.html">
+    <button>Classical</button>
+    </a>
+  </div>
+  </div>
+
+  <div class = "row">
+    <div class = "genre">
+    <a href="exp4_indie.html">
+    <button>Indie</button>
+    </a>
+    </div>
+  </div>
+
+  </div>
+
+<div class = "col-3" style = "background-color: rgb(15,15,15);">
+  <div class = "row" style = "color:rgb(100,100,100); padding-top:25%; padding-left:10%; font-family: 'Plus Jakarta Sans', sans-serif; font-weight:bold; font-size:.5rem; letter-spacing:.2rem">
+    AUDIO DATA
+  </div>
+
+  <div class = "row" style = "font-family: 'Plus Jakarta Sans', sans-serif; font-size:.75rem; ">
+   <div style = "padding-left:10%; padding-top:10%; color:white;" ><b>Analog vs. Digital</b> <em>(Saturation)</em>— </div> 
+  <div style = "padding-left:10%;padding-top:5%; padding-right:10%; color:white;"> 
+    The audio data we're reading in is digital, or has discrete values, since computers store information in bits (0 and 1s). However, actually sound is continuous and so when we move from actual sound (a physical process— analog) to a digital process, we have to take into account frame rate— the more frame rates, the less distinction one can make between continuous actual sound and digital discrete values.
+</div>
+</div>
+
+  <div class = "row" style = "font-family: 'Plus Jakarta Sans', sans-serif; font-size:.75rem; ">
+    <div style = "padding-left:10%; padding-top:10%; color:white;" ><b>Spectrogram</b> <em></em>— </div> 
+    <div style = "padding-left:10%;padding-top:5%; padding-right:10%; color:white;"> 
+
+      The audiovisual to the right takes the output of the FFT analyzer (spectrum of frequencies) and plots the frequencies across spokes, each spoke representing a time unit and the amplitude of frequencies (opacity & color) over time (cycles the circle).
+    </div>
+</div>
+</div>
+
+  <div class = "col-7" style = "background-color:white;">
+    <!-- <div class = "row">
+    <div id = "button"><a href = "index.html" >Experience 1 </a></div>
+    <div id = "button"><a href = "exp2.html">Experience 2 </a> </div>
+    <div id = "button"><a href = "exp3.html">Experience 3 </a> </div>
+  </div> -->
+  <div class = "row">
+  <main></main>
+  </div>
+  </div>
+
+  
+</div>
+
+
+</body>
+</html>

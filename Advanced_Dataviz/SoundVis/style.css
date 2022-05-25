@@ -1,0 +1,112 @@
+
+#pageButton {
+    display:block; 
+    background-color:white; 
+    padding-right:10%; 
+    padding-left:10%; 
+    padding-top:15%; 
+    padding-bottom:15%; 
+    text-align:center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+
+.genre {
+    display:block; 
+    width:100%;
+
+    text-align:center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+#visualization {
+    text-align:center;
+    padding-top:22%;
+    padding-bottom:22%;
+    color:white;
+    background-color:sandybrown;
+}
+
+#nav {
+    text-align:center;
+    padding-top:5%;
+    padding-bottom:5%;
+    background-color:purple;
+    color:white;
+    position: sticky; /* this stickiness is not working */
+}
+
+#page {
+    width:auto;
+    height:1440px;
+}
+
+#button {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    float:inline-start;
+    padding-left:5%;
+    padding-right:5%;
+    margin-left:2%;
+    margin-right: 2%;
+    margin-top:2%;
+    width: auto;
+    height: 50px;
+    background-color:antiquewhite;
+    color:black;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* #button2 {
+    display: flex;
+ padding-left:10%;
+
+} */
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+#navbar {
+    position:absolute;
+    width: 575px;
+
+}
+
+button {
+    padding-left:5%;
+    padding-right:5%;
+    margin-left:2%;
+    margin-right: 2%;
+    margin-top:2%;
+    margin-bottom:2%;
+    width: auto;
+    height: 50px;
+    background-color:antiquewhite;
+    color:black;
+    font-family: 'Share Tech Mono', monospace;
+    
+}
+
+
+div.col-7 {
+    padding:0;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+
+  main {
+      display:flex;
+  }
+  
